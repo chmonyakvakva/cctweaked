@@ -58,18 +58,18 @@
 
 <div class="panel">
 
-    <h1>🛡️ BASE CONTROL</h1>
+    <h1> Достижения </h1>
 
     <div id="status">
         ⏳ Загрузка...
     </div>
 
     <button class="on" onclick="setShield('on')">
-        🟢 ВКЛЮЧИТЬ ЩИТ
+        🟢 Открыть спуск
     </button>
 
     <button class="off" onclick="setShield('off')">
-        🔴 ВЫКЛЮЧИТЬ ЩИТ
+        🔴 закрыть спуск
     </button>
 
 </div>
@@ -85,10 +85,10 @@ async function updateStatus() {
 
         if (data.shield === "on") {
             document.getElementById("status").innerText =
-                "🟢 ЩИТ ВКЛЮЧЕН";
+                "🟢 Спуск открыт";
         } else {
             document.getElementById("status").innerText =
-                "🔴 ЩИТ ВЫКЛЮЧЕН";
+                "🔴 Спуск закрыт";
         }
 
     } catch (error) {
